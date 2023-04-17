@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "nombre": "Abbey Road",
+        "imagen": "./images/ar.jpg",
+        "precio": 9000
+    },
+    {
+        "id": "2",
+        "nombre": "The dark side of the Moon",
+        "imagen": "./images/The_Dark_Side_of_the_Moon_Cover.svg.png",
+        "precio": 7500
+    },
+    {
+        "id": "3",
+        "nombre": "Thriller",
+        "imagen": "./images/Michael_Jackson_-_Thriller.png",
+        "precio": 9000
+    },
+    {
+        "id": "4",
+        "nombre": "Outlandos D´amour",
+        "imagen": "./images/thepolice.jpg",
+        "precio": 8000
+    },
+    {
+        "id": "5",
+        "nombre": "Songs in the Key of Life",
+        "imagen": "./images/Songs_in_the_key_of_life.jpg",
+        "precio": 15000
+    },
+    {
+        "id": "6",
+        "nombre": "Ziggy Stardust",
+        "imagen": "./images/ZiggyStardust.jpg",
+        "precio": 10000
+    },
+    {
+        "id": "7",
+        "nombre": "La Grasa de las Capitales",
+        "imagen": "./images/Serú_Girán_–_Grasa_De_Las_Capitales.jpg",
+        "precio": 19000
+    },
+    {
+        "id": "8",
+        "nombre": "Breakfast in America",
+        "imagen": "./images/Supertramp_-_Breakfast_in_America.jpg",
+        "precio": 6000
+    }
+]
