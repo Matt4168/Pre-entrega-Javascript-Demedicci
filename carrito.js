@@ -71,14 +71,12 @@ const eliminarProducto = (id) => {
   }).showToast();
 
 }
-actualizarCarrito();
-
-
-fin.addEventListener("click", finalizar);
-function finalizar() {
-    Swal.fire(
-        'Good job!',
-        'You clicked the button!',
-        'success'
-      )
-}
+// actualizarCarrito();
+// fin.addEventListener("click", finalizar);
+// function finalizar() {
+//     Swal.fire(
+//         'Good job!',
+//         'You clicked the button!',
+//         'success'
+//       )
+// }

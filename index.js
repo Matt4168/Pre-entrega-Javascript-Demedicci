@@ -72,27 +72,30 @@ function cargarDiscos(){
 cargarDiscos()
 const carrito = []
 const botonesAgregar = document.querySelectorAll('.btn-primary')
-
-botonesAgregar.forEach((boton) => {
-  boton.onclick = () => {
-    const disco = discos.find((disco) => disco.id === parseInt(boton.id))
-    const discosCarrito = {
-      id: disco.id,
-      nombre: disco.nombre,
-      precio: disco.precio,
-      imagen: disco.imagen,
-      cantidad: 1,
+cargarCarrito(carrito)
+function cargarCarrito(){
+  botonesAgregar.forEach((boton) => {
+    boton.onclick = () => {
+      const disco = discos.find((disco) => disco.id === parseInt(boton.id))
+      const discosCarrito = {
+        id: disco.id,
+        nombre: disco.nombre,
+        precio: disco.precio,
+        imagen: disco.imagen,
+        cantidad: 1,
+      }
+    const discoEnCarrito = carrito.find(disco=>disco.id===discosCarrito.id)
+      if(!discoEnCarrito){
+          carrito.push(discosCarrito)
+      } else {
+          discoEnCarrito.cantidad++
+      }
+      localStorage.setItem("carrito", JSON.stringify(carrito))
     }
-  const discoEnCarrito = carrito.find(disco=>disco.id===discosCarrito.id)
-    if(!discoEnCarrito){
-        carrito.push(discosCarrito)
-    } else {
-        discoEnCarrito.cantidad++
-    }
-    localStorage.setItem("carrito", JSON.stringify(carrito))
-  }
+  
+  })
+}
 
-})
 
 
 
